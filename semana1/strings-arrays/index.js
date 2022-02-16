@@ -24,7 +24,7 @@ const valor = array[i+6]
 console.log('f. ', valor)
 //RESOLUÇÃO: Bem parecido com o anterior, só que nesse caso, estamos chamando uma posição em array. Estamos definindo que valor = índice de um elemento em array. Portanto, estamos afirmando que valor = array[0+6] --> valor = array[6], logo valor = 9.
 
-02
+// //02
 const frase = prompt("Digite uma frase") //Subi num ônibus em Marrocos
 console.log(frase.toUpperCase().replaceAll("A", "I"), frase.length)
 // RESOLUÇÃO: "frase.toUpperCase()", a frase digitada pelo usuário será retornado em caixa alta, logo: "SUBI NUM ÔNIBUS EM MARROCOS". .replaceAll("A", "I")" atrelado ao frase.toUpperCase(), faz com que substitua todos os "A" por "I". frase.length vai me retornar o comprimento daquela frase, lembrando que os espaçamentos também são constados. Sendo assim, a frase vai ficar: "SUBI NUM ÔNIBUS EM MIRROCOS".
