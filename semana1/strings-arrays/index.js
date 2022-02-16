@@ -56,6 +56,7 @@ const userQuestion2 = prompt('Please insert a (2) secondary task, which you have
 const userQuestion3 = prompt('Please insert the (3) last task, which you have to do')
 listaDeTarefas.push(userQuestion1, userQuestion2, userQuestion3)
 // listaDeTarefas = [userQuestion1, userQuestion2, userQuestion3]
+console.log(listaDeTarefas)
 let taskDone = Number(prompt('Dear user, please insert the index of a previously mentioned task that has already been done (1 - 3)'))
 listaDeTarefas.splice((taskDone - 1), 1)
 console.log(listaDeTarefas)
