@@ -39,6 +39,7 @@ function userInformaton(nome, idade, endereco, profissao) {
 console.log(userInformaton(userName, userAge, userAdress, userJob))
 
 //02
+//A
 let userFirstNumber = Number(prompt('Please insert your first number'))
 let userSecondNumber = Number(prompt('Please insert your second number'))
 function somaDoisNumeros(primeiroNumero, segundoNumero) {
@@ -47,6 +48,7 @@ function somaDoisNumeros(primeiroNumero, segundoNumero) {
 console.log(`A soma dos dois numeros equivalem: ${somaDoisNumeros(userFirstNumber, userSecondNumber)}`)
 
 
+//B
 userFirstNumber = Number(prompt('Please insert your first number'))
 userSecondNumber = Number(prompt('Please insert your second number'))
 function comparativoMaiorOuIgual(primeiroNumero, segundoNumero) {
@@ -55,6 +57,7 @@ function comparativoMaiorOuIgual(primeiroNumero, segundoNumero) {
 console.log(`O primeiro número é maior ou igual ao segundo? ${comparativoMaiorOuIgual(userFirstNumber, userSecondNumber)}`)
 
 
+//C
 userFirstNumber = Number(prompt('Please insert your first number'))
 function parOuImpar(primeiroNumero) {
   return primeiroNumero % 2 === 0
@@ -62,6 +65,7 @@ function parOuImpar(primeiroNumero) {
 console.log(`O primeiro número é par? ${parOuImpar(userFirstNumber)}`)
 
 
+//D
 const userPhrase = prompt('Please insert your message')
 function mensagemMaiusculaTamanho(mensagem) {
     return ` A frase digitada pelo usuário é: ${mensagem.toUpperCase()} e possui ${mensagem.length} caracteres.`
