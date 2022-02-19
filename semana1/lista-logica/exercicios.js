@@ -21,26 +21,27 @@ function calculaAreaRetangulo() {
   // implemente sua lógica aqui
   const altura = Number(prompt('Digite o valor da altura'))
   const largura = Number(prompt('Digite o valor da largura'))
-  const area = altura * largura
-  console.log(area)
-  return area
+  return altura * largura
 }
+console.log(calculaAreaRetangulo())
+
 
 // EXERCÍCIO 02
 function imprimeIdade() {
   // implemente sua lógica aqui
   const anoAtual = Number(prompt('Digite o ano atual'))
   const anoNascimento = Number(prompt('Digite o seu ano de nascimento'))
-  const idade = anoAtual - anoNascimento
-  console.log(idade)
-  return idade
+  return anoAtual - anoNascimento
 }
+console.log(imprimeIdade())
+
 
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
   return (peso / Math.pow(altura, 2)).toFixed(1)
 }
+console.log(calculaIMC(81, 1.74))
 
 // EXERCÍCIO 04
 function imprimeInformacoesUsuario() {
@@ -49,9 +50,9 @@ function imprimeInformacoesUsuario() {
   const userName = prompt('Dear user, insert your name.')
   const userAge = Number(prompt('Dear user, insert your age.'))
   const userEmail = prompt('Dear user, insert your email adress')
-  const phrase = `Meu nome é ${userName}, tenho ${userAge} anos, e o meu email é ${userEmail}.`
-  console.log(phrase)
+  return `Meu nome é ${userName}, tenho ${userAge} anos, e o meu email é ${userEmail}.`
 }
+console.log(imprimeInformacoesUsuario())
 
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
@@ -59,16 +60,16 @@ function imprimeTresCoresFavoritas() {
   const userColor1 = prompt('Dear user, insert your favorite color.')
   const userColor2 = prompt('Dear user, insert your favorite color.')
   const userColor3 = prompt('Dear user, insert your favorite color.')
-  const userColors = [userColor1, userColor2, userColor3]
-  console.log(userColors)
-  return userColors
+  return [userColor1, userColor2, userColor3]
 }
+console.log(imprimeTresCoresFavoritas())
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
   return string.toUpperCase()
 }
+console.log(retornaStringEmMaiuscula(`Não tem mundial, KKK`))
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
@@ -139,5 +140,5 @@ function checaValidadeInscricaoLabenu() {
   const userScholarity = prompt('Você possui ensino médio completo? Responda com "sim" ou "nao".')
   const userAvailability = prompt('Você possui disponibilidade exclusiva durante os horários do curso? Responda com "sim" ou "nao".')
   console.log(userName.includes('sim') && userScholarity.includes('sim') && userAvailability.includes('sim'))
-  return checaValidadeInscricaoLabenu 
+  return checaValidadeInscricaoLabenu
 }
