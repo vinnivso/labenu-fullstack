@@ -114,8 +114,8 @@ const objectFruitThree = {
   userFruit: prompt("Please insert your less favorite fruit."),
   disponobility: prompt('Do you have this fruit? (Answer only with "yes" or "no".)').includes("yes"),
 }
-function completandandoCarrinho(objectOne, objectFruitTwo, objectFruitThree) {
-  return carrinho.push(objectOne, objectFruitTwo, objectFruitThree)
+function completandandoCarrinho(parameter1, parameter2, parameter3) {
+  return carrinho.push(parameter1, parameter2, parameter3)
 }
 completandandoCarrinho(objectFruitOne, objectFruitTwo, objectFruitThree)
 console.log(carrinho)
