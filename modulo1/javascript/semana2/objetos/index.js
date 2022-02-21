@@ -62,9 +62,7 @@ console.log(minhaFuncao(pessoa, "altura"))
 // -----------------------> EXERCÍCIO 1 <--------------------------
 const userInput = {
   userName: prompt("Please insert your name."),
-  userNickNames: prompt(
-    'Please insert your nicknames, separeted by ",".'
-  ).split(",", 3),
+  userNickNames: prompt('Please insert your nicknames, separeted by ",".').split(",", 3),
 }
 function userPhrase(userObject) {
   console.log(
@@ -75,10 +73,7 @@ function userPhrase(userObject) {
 userPhrase(userInput)
 const userInput2 = {
   ...userInput,
-  userNickNames: prompt('Please insert your nicknames, separed by ",".').split(
-    ",",
-    3
-  ),
+  userNickNames: prompt('Please insert your nicknames, separed by ",".').split(",",3),
 }
 userPhrase(userInput2)
 
@@ -109,21 +104,15 @@ userPhrase(userInputTwo)
 let carrinho = []
 const objectFruitOne = {
   userFruit: prompt("Please insert your most favorite fruit."),
-  disponobility: prompt(
-    'Do you have this fruit? (Answer only with "yes" or "no".)'
-  ).includes("yes"),
+  disponobility: prompt('Do you have this fruit? (Answer only with "yes" or "no".)').includes("yes"),
 }
 const objectFruitTwo = {
   userFruit: prompt("Please insert your second favorite fruit."),
-  disponobility: prompt(
-    'Do you have this fruit? (Answer only with "yes" or "no".)'
-  ).includes("yes"),
+  disponobility: prompt('Do you have this fruit? (Answer only with "yes" or "no".)').includes("yes"),
 }
 const objectFruitThree = {
   userFruit: prompt("Please insert your less favorite fruit."),
-  disponobility: prompt(
-    'Do you have this fruit? (Answer only with "yes" or "no".)'
-  ).includes("yes"),
+  disponobility: prompt('Do you have this fruit? (Answer only with "yes" or "no".)').includes("yes"),
 }
 function completandandoCarrinho(objectOne, objectFruitTwo, objectFruitThree) {
   return carrinho.push(objectOne, objectFruitTwo, objectFruitThree)
@@ -143,24 +132,16 @@ function userInput() {
     userAge: userQuestionAge,
     userOccupation: userQuestionOccupation,
   }
-  console.log(
-    `O nome do usuário é: ${objekt.userName}, possui ${objekt.userAge} anos e sua respectiva ocupação é ${objekt.userOccupation}.`
-  )
+  console.log(`O nome do usuário é: ${objekt.userName}, possui ${objekt.userAge} anos e sua respectiva ocupação é ${objekt.userOccupation}.`)
 }
 userInput()
 
 // -----------------------> EXERCÍCIO 2 <--------------------------
 function userFilms() {
   const userFirstMovieName = prompt("Please insert your favorite film.")
-  const userFirstMovieReleaseDate = Number(
-    prompt("Please insert the release date of your favorite film.")
-  )
-  const userSecondMovieName = prompt(
-    "Please insert your secondary favorite film."
-  )
-  const userSecondMovieReleaseDate = Number(
-    prompt("Please insert the release date of your secondary favorite film.")
-  )
+  const userFirstMovieReleaseDate = Number(prompt("Please insert the release date of your favorite film"))
+  const userSecondMovieName = prompt("Please insert your secondary favorite film.")
+  const userSecondMovieReleaseDate = Number(prompt("Please insert the release date of your secondary favorite film."))
   const objectFilmOne = {
     FilmName: userFirstMovieName,
     ReleaseDate: userFirstMovieReleaseDate,
@@ -182,21 +163,15 @@ userFilms()
 let carrinhoChallenge = []
 const objectFruitOneChallenge = {
   userFruit: prompt("Please insert your most favorite fruit."),
-  disponobility: prompt(
-    'Do you have this fruit? (Answer only with "yes" or "no".)'
-  ).includes("yes"),
+  disponobility: prompt('Do you have this fruit? (Answer only with "yes" or "no".)').includes("yes"),
 }
 const objectFruitTwoChallenge = {
   userFruit: prompt("Please insert your second favorite fruit."),
-  disponobility: prompt(
-    'Do you have this fruit? (Answer only with "yes" or "no".)'
-  ).includes("yes"),
+  disponobility: prompt('Do you have this fruit? (Answer only with "yes" or "no".)').includes("yes"),
 }
 const objectFruitThreeChallenge = {
   userFruit: prompt("Please insert your less favorite fruit."),
-  disponobility: prompt(
-    'Do you have this fruit? (Answer only with "yes" or "no".)'
-  ).includes("yes"),
+  disponobility: prompt('Do you have this fruit? (Answer only with "yes" or "no".)').includes("yes"),
 }
 function completandandoCarrinho(parameterOne, parameterTwo, parameterThree) {
   return carrinho.push(parameterOne, parameterTwo, parameterThree)
