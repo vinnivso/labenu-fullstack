@@ -33,18 +33,20 @@
 
 // ------------------- EXERCÍCIOS DE ESCRITA DE CÓDIGO -------------
 // ----------------------->EXERCÍCIO 1<-----------------------------
-// let quantidadeDePets = Number(prompt('Quantos pets você possui?'))
-// let arrayDePets = []
+let quantidadeDePets = Number(prompt("Quantos pets você possui?"))
+let arrayDePets = []
 
-// if(quantidadeDePets === 0) {
-//     console.log('Que pena! Você pode adotar um pet!')
-// }   else if(quantidadeDePets > 0) {
-//         for(let i = 0; i < quantidadeDePets; i++) {
-//         let nomeDePets = prompt('Digite o nome de seus Pets.')
-//         arrayDePets.push(nomeDePets)
-//     }
-//     console.log(arrayDePets)
-// }
+if (quantidadeDePets === 0) {
+  console.log("Que pena! Você pode adotar um pet!")
+} else if (quantidadeDePets > 0) {
+  for (let i = 0; i < quantidadeDePets; i++) {
+    let nomeDePets = prompt("Digite o nome de seus Pets.")
+    arrayDePets.push(nomeDePets)
+  }
+  console.log(arrayDePets)
+} else {
+  console.log("Como você consegue ter < 0 de pets? ")
+}
 
 // ----------------------->EXERCÍCIO 2<-----------------------------
 //A.
