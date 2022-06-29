@@ -1,0 +1,24 @@
+{
+  "name": "15-4-aprofundamento-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "vinnivso",
+  "license": "MIT",
+  "scripts": {
+    "exercicio1-dev": "clear && tsc && nodemon ./src/exercicio1.ts",
+    "exercicio2-dev": "clear && tsc && nodemon ./src/exercicio2.ts",
+    "exercicio3-dev": "clear && tsc && nodemon ./src/exercicio3.ts",
+    "exercicio4-dev": "clear && tsc && nodemon ./src/exercicio4.ts",
+    "exercicio1-build": "clear && tsc && node ./build/exercicio1.js",
+    "exercicio2-build": "clear && tsc && node ./build/exercicio2.js",
+    "exercicio3-build": "clear && tsc && node ./build/exercicio3.js",
+    "exercicio4-build": "clear && tsc && node ./build/exercicio4.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "nodemon": "^2.0.18",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  }
+}
